@@ -1,10 +1,7 @@
-git clone
-git add
-git commit
-git pull
-git push
-git show
-git log
+
+Changing Some Content. Java Class
+
 First class is about static class------02/14
 Second class is about singulartone-----02/16
+
 
