@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
  I learn how to push file on git.
-=======
+
 First class is about static class------02/14
 Second class is about singulartone-----02/16
->>>>>>> 4b3fdcd67dd07230a521009fe7bf1feb235c325f
-=======
+
 git clone
 git add
 git commit
@@ -16,4 +13,6 @@ git log
 First class is about static class------02/14
 Second class is about singulartone-----02/16
 
->>>>>>> 8765c185d92ebe145306648d50fffda293dd37e0
+
+Changing Some Content. Java Class
+
