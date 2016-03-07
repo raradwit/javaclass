@@ -18,7 +18,7 @@ public class FileOperation {
     String tags[] = new String[]{"commit","Author","Date"};
     public boolean writeToFile(List<String> commitList){
         List<String> requiredLines = new ArrayList<>();
-        Path file = Paths.get("CommitList.txt");
+        Path file = Paths.get("Commit.txt");
         requiredLines.add("------------------------------------------------------");
         for(String messages:commitList){
             System.out.println(messages);
