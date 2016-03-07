@@ -13,7 +13,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please Enter the Commit Id:");
         String commitId = scanner.nextLine();
-        Map<String,List<String>> allList = command.getMessage("821bedc22cc405f7f5f52165e083066ff6e257bb");//fa7c71a80496c594e0dc544cabbca1969ea6fc84
+        Map<String,List<String>> allList = command.getMessage("f536e05337d45e61c38873a2fc1ab6fd3b2468e0");//fa7c71a80496c594e0dc544cabbca1969ea6fc84
         FileOperation operation = new FileOperation();
         for(String message:allList.get("commitInfo")){
             if(message.contains(GitMessage.errorMessagePatternOne)|| message.contains(GitMessage.errorMessagePatternTwo)){

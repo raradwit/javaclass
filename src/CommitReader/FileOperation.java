@@ -23,10 +23,14 @@ public class FileOperation {
         }
         List<String> requiredLines = new ArrayList<>();
         Path file = Paths.get("Commit.txt");
-        requiredLines.add("------------------------------------------------------");
+        requiredLines.add("------------------------------------------------------\n");
         requiredLines.addAll(allList.get("commitInfo").stream().filter(messages -> messages != null).collect(Collectors.toList()));
 
+        requiredLines.add("\n");
+
         requiredLines.addAll(allList.get("commitMessage").stream().filter(message -> message != null).collect(Collectors.toList()));
+
+        requiredLines.add("Files Modified/Deleted/Changes:");
 
         for(String message:allList.get("filesChange")){
             if(message!=null) {
