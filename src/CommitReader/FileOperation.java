@@ -17,24 +17,14 @@ import java.util.stream.Collectors;
  Date: 3/3/2016.
  */
 public class FileOperation {
-    String tags[] = new String[]{"commit","Author","Date"};
     public boolean writeToFile(Map<String,List<String>> allList){
+        if(checkCommitId(allList.get("commitInfo").get(allList.get("commitInfo").size()-1))){
+            return false;
+        }
         List<String> requiredLines = new ArrayList<>();
         Path file = Paths.get("Commit.txt");
         requiredLines.add("------------------------------------------------------");
-        for(String messages:allList.get("commitInfo")){
-            System.out.println(messages);
-            if(messages!=null) {
-                if(messages.contains(tags[0])){
-                    if(checkCommitId(messages)){ //Checking for if commit id already exists in file.
-                       return false;
-                    }
-                }
-                if (messages.contains(tags[0]) || messages.contains(tags[1]) || messages.contains(tags[2])) {
-                    requiredLines.add(messages);
-                }
-            }
-        }
+        requiredLines.addAll(allList.get("commitInfo").stream().filter(messages -> messages != null).collect(Collectors.toList()));
 
         requiredLines.addAll(allList.get("commitMessage").stream().filter(message -> message != null).collect(Collectors.toList()));
 
