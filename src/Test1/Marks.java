@@ -5,6 +5,7 @@ package Test1;
  * Date: 3/8/2016.
  */
 public class Marks {
+
     private Double sub1;
     private Double sub2;
     private Double sub3;

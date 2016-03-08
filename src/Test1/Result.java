@@ -7,6 +7,7 @@ import java.util.function.Predicate;
  * Date: 3/8/2016.
  */
 public class Result {
+
     private static Result result;
 
     public static Result getResultInstance(){

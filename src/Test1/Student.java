@@ -8,6 +8,7 @@ import java.util.List;
  * Date: 3/8/2016.
  */
 public class Student {
+
     public Student() {
     }
 

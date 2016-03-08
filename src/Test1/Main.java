@@ -8,6 +8,7 @@ import java.util.function.Supplier;
  * Date: 3/8/2016.
  */
 public class Main {
+
     public static void main(String[] args) {
 //        Student obj1 = new Student();
         Supplier<Student> obj = Student::new;
