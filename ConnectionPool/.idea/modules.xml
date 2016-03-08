@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/javaclass.iml" filepath="$PROJECT_DIR$/.idea/javaclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConnecationPool.iml" filepath="$PROJECT_DIR$/ConnecationPool.iml" />
     </modules>
   </component>
 </project>
